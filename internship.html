@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: transparent;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+        nav a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a.active {
+            color: #ff6600;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px 20px;
+        }
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .left, .right {
+            flex: 1;
+            padding: 10px;
+        }
+        .left {
+            text-align:justify;
+        }
+        .right h1 {
+            font-size: 36px;
+            color: #000;
+        }
+        .right p {
+            font-size: 18px;
+            color: #555;
+        }
+        .right h1, .right p {
+            margin: 10px 0px;
+        }
+        .right h1 span {
+            color: #ff6600;
+        }
+        nav a.active {
+            color: #ff6600;
+        }
+        .hire-me {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #ff6600;
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .hire-me:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+        /* Smooth scrolling overflow */
+        .container {
+            overflow: hidden;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .container p {
+            word-wrap: break-word;
+        }
+
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        background-color: transparent;
+        color: #fff;
+    }
+    .name {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav a {
+        margin: 0 10px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav a.active {
+        color: #ff6600;
+    }
+    nav a:hover {
+        color: #ff6600;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+    .right {
+        margin-left: 40px;
+        max-width: 600px;
+    }
+    .right h1 {
+        font-size: 36px;
+        margin: 0;
+        color: #000;
+    }
+    .right h1 span {
+        color: #ff6600;
+    }
+    .right p {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #555;
+    }
+    .social-icons {
+        margin-top: 20px;
+    }
+    .social-icons a {
+        margin: 0 10px;
+        color: grey;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: #000;
+    }
+    .hire-me {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #ff6600;
+        border: 2px solid #ff6600;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .hire-me:hover {
+        background-color: #ff6600;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="name">THULASIRAM K</div>
+    <nav>
+        <a href="index.html"  onclick="setActive(this)">HOME</a>
+        <a href="skills.html" onclick="setActive(this)">SKILLS</a>
+        <a href="internship.html"  class="active" onclick="setActive(this)">INTERNSHIP</a>
+        <a href="contact .html" onclick="setActive(this)">CONTACT</a>
+    </nav>
+</header>
+    <!-- First Container -->
+    <div class="container">
+        <div class="left">
+            <img src="NLCIL_Corp_Office.jpg">
+        </div>
+        <div class="right">
+            <h1>Neyveli Lignite Corporation</h1>
+            <p>TNLC India Limited (NLC) (formerly Neyveli Lignite Corporation India Limited) is a central public sector undertaking under the administrative control of the Ministry of Coal, Government of India. It annually produces about 30 million tonnes of lignite from opencast mines at Neyveli in the state of Tamil Nadu in southern India and at Barsingsar in Bikaner district of Rajasthan state. The lignite is used at pithead thermal power stations of 3640 MW installed capacity to produce electricity. Its joint venture has a 1000 MW thermal power station using coal. Lately, it has diversified into renewable energy production and installed 1404 MW solar power plant to produce electricity from photovoltaic (PV) cells and 51 MW electricity from windmills.
+                It was incorporated in 1956 and was wholly owned by the Government of India. A small portion of its stock was sold to the public to list its shares on stock exchanges where its shares are traded.</p>
+        </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container">
+        <div class="left">
+            <h1>Temperature Analysis in Belt Gearbox</h1>
+            <p>Performance and Analysis: The performance of bucket wheel excavators (BWEs) in open cast mines, such as those in Neyveli Lignite mine, involves significant maintenance work, including temperature monitoring of gearboxes. The study highlights the importance of monitoring various parameters like oil temperature, oil pressure, power, and rotational speed to predict parts failure and ensure failure-free operation2.
+
+                Condition Monitoring: A condition monitoring system was developed for the bevel planetary gearbox of a bucket-wheel excavator. This system monitors various parameters, including temperature, to predict failures and reduce unplanned downtimes. The system uses accelerometers on the gearbox casing to measure vibration signals, which are then analyzed to monitor the gearbox's condition2.
+                
+                Dynamic Structural Steel: Modifications to the input pinion design and welding process in the gearbox address issues like misalignment and cracking, which can be exacerbated by temperature variations</p>
+        </div>
+        <div class="right">
+            <img src="internship.jpg" alt="Temperature Analysis Gearbox">
+        </div>
+    </div>
+
+    <script>
+        function setActive(element) {
+            document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
